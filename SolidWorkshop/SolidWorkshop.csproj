@@ -40,8 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service.cs" />
-    <Compile Include="Entity.cs" />
+    <Compile Include="BLL\Interfaces\ILogger.cs" />
+    <Compile Include="BLL\Logger.cs" />
+    <Compile Include="Model\Interfaces\IEntity.cs" />
+    <Compile Include="Model\Interfaces\IEntityRepository.cs" />
+    <Compile Include="Model\Interfaces\IRepository.cs" />
+    <Compile Include="Model\EntityRepository.cs" />
+    <Compile Include="BLL\EntityService.cs" />
+    <Compile Include="Model\Entity.cs" />
+    <Compile Include="BLL\Interfaces\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
